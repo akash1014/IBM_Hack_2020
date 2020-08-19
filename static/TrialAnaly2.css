@@ -1,0 +1,198 @@
+.myNavbar2{
+  padding-top: 70px;
+
+}
+
+
+body{
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: #eee;
+	background-image: url("https://images.unsplash.com/photo-1585912812840-b457972f28d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60");
+	background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; 
+  transition: 5s;
+
+  animation-name: animate;
+  animation-direction: alternate-reverse;
+  animation-duration:30s;
+  animation-fill-mode: forwards ;
+  animation-iteration-count:infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out ;
+}
+
+@keyframes animate{
+
+	0%{
+		background-image: url("https://images.unsplash.com/photo-1593131492215-67b479a3d915?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60") ;
+	}20%{
+		background-image: url("https://images.unsplash.com/photo-1593118034608-0062c2d3505f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60");
+	}40%{
+		background-image: url("https://images.unsplash.com/photo-1593049751314-e8173c8302b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60");
+	}60%{
+		background-image: url("https://images.unsplash.com/photo-1592875700813-02d219d087fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60");
+	}80%{
+		background-image: url("https://images.unsplash.com/photo-1592251888111-3ae4c5bd7768?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60")
+	}100%{
+		background-image: url("https://images.unsplash.com/photo-1591957971546-ac76c69146d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60");
+	}
+}
+
+.sidebar {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .9)), url(https://images.unsplash.com/photo-1509515837298-2c67a3933321?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 5px 7px 25px #999;
+}
+
+.bottom-border {
+  border-bottom: 1px groove #eee;
+}
+
+.nav-item{
+	text-align: center;
+}
+
+.card {
+	display:inline-block;
+	margin-left: 270px;
+	margin-top: 120px;
+}
+
+.card-deck{
+	padding-left: 270px;
+	padding-right: 50px;
+}
+
+.sidebar-link {
+  transition: all .4s;
+}
+
+.sidebar-link:hover {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+section{
+	display:flex;
+	height: 100vh;
+	width: 100vw;
+	align-items: centre;
+	justify-content: centre;
+	overflow: hidden;
+	background-color: #292929;
+
+}
+
+/*.card{
+	display:grid;
+	grid-template-columns: 300px;
+	grid-template-rows: 180px 180px 80px;
+	grid-template-areas:"image" "text" "stats";
+	font-family:"franklin Gothic";
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+	text-align: centre;
+	margin:150px;
+	margin-left: 280px;
+}*/
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
+}
+
