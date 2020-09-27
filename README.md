@@ -47,10 +47,10 @@ html(activation of function)-> url(cheking function) -> views.py(checking functi
 # Content
 
 ### Frontend content :
-                      Main->Static Folder-> Trial Analysis2
-                      Main-> Templates->Html 
+                      Static Folder-> Trial Analysis2
+                      Templates->Html 
 ### Django files:      
-                   Main-> Twwet_Dashboard-> models.py->(forms)
+                      Twwet_Dashboard-> models.py->(forms)
                                            urls.py->(paths for webpages)
                                            views.py-> (working functions of backend)
                                            Management-> commands-> bluemix_init.py(for hosting) 
@@ -60,13 +60,13 @@ html(activation of function)-> url(cheking function) -> views.py(checking functi
                                         ->twwet_me.ipynb ( For single line output )
                                      
 ### for preprocessing 
-                       tokenizer-> tokenizer_SAVED_OOV.pickle   (tokenize (oov token)) 
+                       static->models->tokenizer_SAVED_OOV.pickle   (tokenize (oov token)) 
                        (padding fn)[in jupyter notebook]
                        
 ### For dataset:
-                 dataset->hell.csv
+                  static->dataset->hell.csv
 ### For weights:
-                  weights-> multi_traget_feeling.hdf5 (multiple feelings for a particular text as outcome as bar graph in dashboard)
+                  static->models-> multi_traget_feeling.hdf5 (multiple feelings for a particular text as outcome as bar graph in dashboard)
                          -> first_model_feeling1longonly_NEWMAIN.hdf5(single feeling as a summary of multiline text)
 ## Some Documents:
 
